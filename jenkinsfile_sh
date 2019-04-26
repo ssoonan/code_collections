@@ -1,0 +1,2 @@
+changed_file=$(git diff-tree --no-commit-id --name-only HEAD HEAD^)
+if [[ $changed_file == *"Dockerrun.aws.json"* ]]; then
